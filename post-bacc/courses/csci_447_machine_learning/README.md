@@ -4,8 +4,8 @@ An exploration of biologically inspired machine learning models and algorithms, 
 
 ## Structure
 
-- `project_1/`: archived dataset outputs and the original ARFF conversion helper.
-- `project_2/`: Rosenbrock-function experiments for `MLP.py` and `RBF.py` driven by `project2.py`.
+- `project_1/`: archived dataset outputs and the ARFF conversion helper in `src/arff_converter.py`.
+- `project_2/`: Rosenbrock-function experiments for `src/mlp.py` and `src/rbf.py` driven by `src/project2.py`.
 - `project_3/`: classification experiments that reuse the neural-network code with ARFF datasets and a genetic algorithm workflow.
 - `project_4/`: clustering work, including k-means, competitive learning, DBSCAN, PSO, and ACO variants.
 
@@ -17,7 +17,8 @@ An exploration of biologically inspired machine learning models and algorithms, 
 
 ## Practical Entry Points
 
-- `project_2/project2.py`: Rosenbrock regression experiments.
+- `project_1/src/arff_converter.py`: ARFF conversion utility.
+- `project_2/src/project2.py`: Rosenbrock regression experiments.
 - `project_3/project2.py`: dataset-backed classification experiment.
 - `project_4/clustering/aco.py`: ACO clustering run.
 - `project_4/clustering/kmeans.py`: k-means clustering run.
