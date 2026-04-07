@@ -1,0 +1,33 @@
+[project]
+name = "academic-archive"
+version = "0.1.0"
+description = "Academic archive workspace with shared Python and R tooling."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.8",
+]
+
+[dependency-groups]
+dev = [
+  "pre-commit>=4.2.0",
+  "ruff>=0.11.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = [
+  "renv",
+]
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"

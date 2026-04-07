@@ -1,0 +1,24 @@
+Type: Project
+Package: academic.archive
+Title: Academic Archive Workspace
+Version: 0.1.0
+Authors@R:
+    c(
+        person(
+            given = "Mark",
+            family = "Harris",
+            role = c("aut", "cre"),
+            email = "mark.c.harris@icloud.com"
+        )
+    )
+Description: Repository-level metadata for the academic archive R workflow.
+Depends:
+    R (>= 4.3.0)
+Suggests:
+    lintr,
+    precommit,
+    renv,
+    styler
+Encoding: UTF-8
+License: Proprietary
+LazyData: false

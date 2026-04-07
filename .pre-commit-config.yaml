@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.8
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: r-lintr
+        name: r-lintr
+        entry: Rscript -e 'if (!requireNamespace("lintr", quietly = TRUE)) stop("Install lintr in the renv project library before running pre-commit."); issues <- lintr::lint(commandArgs(trailingOnly = TRUE)); if (length(issues)) { print(issues); quit(status = 1) }'
+        language: system
+        files: \.[Rr](md)?$
+        pass_filenames: true
+      - id: r-styler
+        name: r-styler
+        entry: Rscript -e 'if (!requireNamespace("styler", quietly = TRUE)) stop("Install styler in the renv project library before running pre-commit."); styler::style_file(commandArgs(trailingOnly = TRUE))'
+        language: system
+        files: \.[Rr](md)?$
+        pass_filenames: true
