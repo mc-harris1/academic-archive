@@ -22,18 +22,16 @@ These choices are the default unless a task explicitly changes them.
 - Root: `.pre-commit-config.yaml`
 - Root: `uv.lock` when dependency resolution is checked in
 - `docs/`: design, workflow, and setup documentation
-- `post-bacc/`: post-baccalaureate program materials
-- `graduate-school/`: graduate program materials
-- `shared/`: cross-program Python and reference resources
+- `graduate-school/`: graduate program materials, selected course projects, and repository utilities
 
-When shared implementation code is introduced, keep reusable helpers under `shared/` and keep course-specific scripts in their course folders.
+When reusable implementation code is introduced, keep shared helpers under `graduate-school/utilities/` and keep course-specific scripts in their course folders.
 
 If code is introduced later, prefer conventional layouts instead of ad hoc placement.
 
 - Python code should normally live under `src/`.
 - Tests should follow the structure chosen by the first substantive implementation and remain documented here.
 
-Repository-level shared Python helpers may live under `shared/` when they are intended for direct reuse by standalone course scripts rather than a packaged application layout.
+Repository-level Python helpers may live under `graduate-school/utilities/` when they are intended for direct reuse by standalone course scripts rather than a packaged application layout.
 
 ## Bootstrap Sequence
 
@@ -48,7 +46,7 @@ Repository-level shared Python helpers may live under `shared/` when they are in
 - Prefer `uv` commands for Python environment work once `pyproject.toml` exists.
 - Do not add duplicate linting or formatting tools when `ruff` already covers the task.
 - When configuration changes affect developer workflow, update `.github/copilot-instructions.md` only if the guidance is important for nearly every task.
-- For standalone Python scripts that need local data files, prefer a shared helper under `shared/` that resolves resources from the caller script's directory instead of relying on the shell working directory.
+- For standalone Python scripts that need local data files, prefer a helper under `graduate-school/utilities/` that resolves resources from the caller script's directory instead of relying on the shell working directory.
 
 ## Expected Commands After Bootstrap
 
