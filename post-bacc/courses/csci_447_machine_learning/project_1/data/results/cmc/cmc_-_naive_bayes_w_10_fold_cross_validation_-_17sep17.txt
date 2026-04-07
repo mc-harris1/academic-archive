@@ -1,0 +1,110 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes
+Relation:     cmc.txt
+Instances:    1473
+Attributes:   10
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                 Class
+Attribute            1       2       3
+                (0.43)  (0.23)  (0.35)
+=======================================
+Z
+  mean          33.4245 34.3844 30.2446
+  std. dev.      9.1166  7.4436   6.937
+  weight sum        629     333     511
+  precision           1       1       1
+
+Y
+  mean           2.6709  3.4565  2.9883
+  std. dev.      1.0511  0.7953  0.9651
+  weight sum        629     333     511
+  precision           1       1       1
+
+X
+  mean           3.2814  3.6637  3.4599
+  std. dev.      0.9015  0.7067  0.7281
+  weight sum        629     333     511
+  precision           1       1       1
+
+W
+  mean           3.0743  3.9296  3.5605
+  std. dev.      2.6124  1.9864  1.9595
+  weight sum        629     333     511
+  precision      1.1429  1.1429  1.1429
+
+V
+  mean           0.8808  0.7718   0.865
+  std. dev.      0.3241  0.4197  0.3418
+  weight sum        629     333     511
+  precision           1       1       1
+
+U
+  mean           0.7297  0.7327  0.7847
+  std. dev.      0.4441  0.4425   0.411
+  weight sum        629     333     511
+  precision           1       1       1
+
+T
+  mean           2.2003  1.8408  2.2544
+  std. dev.       0.839  0.8846  0.8381
+  weight sum        629     333     511
+  precision           1       1       1
+
+S
+  mean           2.9539  3.4685   3.137
+  std. dev.      1.0425   0.769  0.9533
+  weight sum        629     333     511
+  precision           1       1       1
+
+R
+  mean           0.1176    0.03  0.0489
+  std. dev.      0.3222  0.1707  0.2157
+  weight sum        629     333     511
+  precision           1       1       1
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         726               49.2872 %
+Incorrectly Classified Instances       747               50.7128 %
+Kappa statistic                          0.24
+Mean absolute error                      0.3695
+Root mean squared error                  0.4592
+Relative absolute error                 85.756  %
+Root relative squared error             98.932  %
+Total Number of Instances             1473
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.477    0.207    0.632      0.477    0.543      0.285    0.693     0.627     1
+                 0.562    0.264    0.383      0.562    0.456      0.264    0.712     0.408     2
+                 0.468    0.282    0.469      0.468    0.468      0.186    0.647     0.488     3
+Weighted Avg.    0.493    0.246    0.519      0.493    0.497      0.246    0.682     0.529
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 300 152 177 |   a = 1
+  52 187  94 |   b = 2
+ 123 149 239 |   c = 3

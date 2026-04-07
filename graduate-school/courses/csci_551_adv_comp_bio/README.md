@@ -2,11 +2,18 @@
 
 Examines a variety of algorithmic computational biology topics with an emphasis on elucidating new research problems.
 
+## Workflow
+
+This course currently uses a script-first Python workflow.
+
+- Run homework directly as `.py` files.
+- Use the repository root Python environment defined in `pyproject.toml`.
+- Keep assignment inputs in `hw/data/` and use matching prefixes, for example `1_match.py` with `1_test.fasta`, `2_align.py` with `2_test.fasta`, and `4_center_star.py` with the `4_*.fasta` files.
+- For scripts that consume FASTA data, pass the filename only. The shared path utility in `shared/path_utils.py` resolves it from the local `hw/data/` directory.
+
+This course is not notebook-first today. If a notebook is added later, it should wrap the existing script logic rather than replace it.
+
 ## Homework Scripts
-
-Homework source files in `hw/` and FASTA inputs in `hw/data/` are prefixed with the assignment number they belong to. Use matching prefixes together, for example `1_match.py` with `1_test.fasta`, `2_align.py` with `2_test.fasta`, and `4_center_star.py` with the `4_*.fasta` files.
-
-The Python homework scripts that consume FASTA files use the shared path utility in `shared/path_utils.py`, so the FASTA argument should be the filename only and will be resolved from the local `hw/data/` directory.
 
 ### Assignment 1
 

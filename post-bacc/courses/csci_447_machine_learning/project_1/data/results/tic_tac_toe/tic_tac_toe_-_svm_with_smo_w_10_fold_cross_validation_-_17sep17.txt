@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     tic-tac-toe.txt
+Instances:    958
+Attributes:   10
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: positive, negative
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.001  * (normalized) Z=x
+ +       2.001  * (normalized) Z=o
+ +       0      * (normalized) Z=b
+ +      -2.0011 * (normalized) Y=x
+ +       2.0011 * (normalized) Y=o
+ +      -0      * (normalized) Y=b
+ +      -2.001  * (normalized) X=x
+ +       2.001  * (normalized) X=o
+ +       0      * (normalized) X=b
+ +      -2.001  * (normalized) W=x
+ +       2.001  * (normalized) W=o
+ +       0      * (normalized) W=b
+ +      -2.0009 * (normalized) V=x
+ +       2.0008 * (normalized) V=o
+ +       0      * (normalized) V=b
+ +      -2.0011 * (normalized) U=x
+ +       2.001  * (normalized) U=o
+ +       0.0001 * (normalized) U=b
+ +      -2.001  * (normalized) T=x
+ +       2.0009 * (normalized) T=o
+ +       0.0001 * (normalized) T=b
+ +      -2.001  * (normalized) S=x
+ +       2.0011 * (normalized) S=o
+ +      -0.0001 * (normalized) S=b
+ +      -2.0009 * (normalized) R=x
+ +       2.001  * (normalized) R=o
+ +      -0      * (normalized) R=b
+ +       1.0005
+
+Number of kernel evaluations: 342017 (78.773% cached)
+
+
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         942               98.3299 %
+Incorrectly Classified Instances        16                1.6701 %
+Kappa statistic                          0.9627
+Mean absolute error                      0.0167
+Root mean squared error                  0.1292
+Relative absolute error                  3.6867 %
+Root relative squared error             27.1571 %
+Total Number of Instances              958
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.048    0.975      1.000    0.987      0.963    0.976     0.975     positive
+                 0.952    0.000    1.000      0.952    0.975      0.963    0.976     0.969     negative
+Weighted Avg.    0.983    0.031    0.984      0.983    0.983      0.963    0.976     0.973
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 626   0 |   a = positive
+  16 316 |   b = negative

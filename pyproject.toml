@@ -1,7 +1,7 @@
 [project]
 name = "academic-archive"
 version = "0.1.0"
-description = "Academic archive workspace with shared Python and R tooling."
+description = "Academic archive workspace with shared Python tooling."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -21,7 +21,6 @@ package = false
 target-version = "py311"
 line-length = 100
 extend-exclude = [
-  "renv",
 ]
 
 [tool.ruff.lint]

@@ -1,0 +1,196 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     tic-tac-toe.txt
+Instances:    958
+Attributes:   10
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+V = x
+|   Z = x
+|   |   R = x: positive (90.0)
+|   |   R = o
+|   |   |   X = x
+|   |   |   |   T = x: positive (10.0)
+|   |   |   |   T = o
+|   |   |   |   |   Y = x: positive (3.0)
+|   |   |   |   |   Y = o: negative (4.0)
+|   |   |   |   |   Y = b: negative (3.0)
+|   |   |   |   T = b: positive (3.0)
+|   |   |   X = o
+|   |   |   |   U = x
+|   |   |   |   |   W = x: positive (5.0)
+|   |   |   |   |   W = o: negative (3.0/1.0)
+|   |   |   |   |   W = b: negative (1.0)
+|   |   |   |   U = o: negative (12.0)
+|   |   |   |   U = b: positive (5.0/1.0)
+|   |   |   X = b
+|   |   |   |   T = x: positive (3.0)
+|   |   |   |   T = o
+|   |   |   |   |   S = x: positive (2.0)
+|   |   |   |   |   S = o: negative (5.0)
+|   |   |   |   |   S = b: positive (1.0)
+|   |   |   |   T = b: positive (2.0)
+|   |   R = b: positive (20.0)
+|   Z = o
+|   |   X = x
+|   |   |   T = x: positive (45.0)
+|   |   |   T = o: negative (26.0/10.0)
+|   |   |   T = b: positive (9.0)
+|   |   X = o
+|   |   |   Y = x: positive (26.0/4.0)
+|   |   |   Y = o: negative (21.0)
+|   |   |   Y = b: positive (11.0/2.0)
+|   |   X = b
+|   |   |   W = x: positive (19.0)
+|   |   |   W = o
+|   |   |   |   T = x: positive (4.0)
+|   |   |   |   T = o: negative (7.0)
+|   |   |   |   T = b: positive (3.0)
+|   |   |   W = b: positive (7.0)
+|   Z = b
+|   |   R = x: positive (20.0)
+|   |   R = o
+|   |   |   U = x: positive (23.0/3.0)
+|   |   |   U = o
+|   |   |   |   X = x: positive (10.0/1.0)
+|   |   |   |   X = o: negative (7.0)
+|   |   |   |   X = b: positive (3.0)
+|   |   |   U = b
+|   |   |   |   T = x: positive (7.0)
+|   |   |   |   T = o
+|   |   |   |   |   S = x: positive (3.0)
+|   |   |   |   |   S = o: negative (3.0)
+|   |   |   |   |   S = b: positive (0.0)
+|   |   |   |   T = b: positive (2.0)
+|   |   R = b: positive (30.0)
+V = o
+|   Z = x
+|   |   X = x
+|   |   |   Y = x: positive (38.0)
+|   |   |   Y = o
+|   |   |   |   S = x: negative (7.0/2.0)
+|   |   |   |   S = o: negative (12.0)
+|   |   |   |   S = b: positive (5.0/1.0)
+|   |   |   Y = b
+|   |   |   |   W = x: positive (4.0/1.0)
+|   |   |   |   W = o
+|   |   |   |   |   U = x: positive (2.0)
+|   |   |   |   |   U = o: negative (6.0)
+|   |   |   |   |   U = b: negative (0.0)
+|   |   |   |   W = b: positive (1.0)
+|   |   X = o
+|   |   |   T = x
+|   |   |   |   W = x: positive (17.0)
+|   |   |   |   W = o: negative (6.0/2.0)
+|   |   |   |   W = b: positive (4.0/2.0)
+|   |   |   T = o: negative (30.0)
+|   |   |   T = b: negative (3.0)
+|   |   X = b
+|   |   |   T = x
+|   |   |   |   W = x: positive (14.0)
+|   |   |   |   W = o: negative (7.0/1.0)
+|   |   |   |   W = b: negative (3.0/1.0)
+|   |   |   T = o: negative (3.0)
+|   |   |   T = b: negative (6.0)
+|   Z = o
+|   |   R = x
+|   |   |   Y = x
+|   |   |   |   T = x
+|   |   |   |   |   S = x: positive (5.0)
+|   |   |   |   |   S = o: negative (3.0/1.0)
+|   |   |   |   |   S = b: negative (1.0)
+|   |   |   |   T = o: negative (8.0/2.0)
+|   |   |   |   T = b: positive (3.0/1.0)
+|   |   |   Y = o
+|   |   |   |   X = x: positive (8.0/1.0)
+|   |   |   |   X = o: negative (2.0)
+|   |   |   |   X = b: positive (3.0/1.0)
+|   |   |   Y = b: positive (15.0/1.0)
+|   |   R = o: negative (50.0)
+|   |   R = b: negative (5.0)
+|   Z = b
+|   |   Y = x: negative (26.0/5.0)
+|   |   Y = o
+|   |   |   S = x: positive (10.0/1.0)
+|   |   |   S = o: negative (12.0)
+|   |   |   S = b: positive (3.0)
+|   |   Y = b: positive (18.0/7.0)
+V = b
+|   Z = x
+|   |   R = x: positive (16.0)
+|   |   R = o
+|   |   |   X = x: positive (20.0/3.0)
+|   |   |   X = o
+|   |   |   |   U = x: positive (3.0/1.0)
+|   |   |   |   U = o: negative (7.0)
+|   |   |   |   U = b: positive (3.0)
+|   |   |   X = b
+|   |   |   |   T = x: positive (6.0)
+|   |   |   |   T = o: negative (3.0)
+|   |   |   |   T = b: positive (0.0)
+|   |   R = b: positive (20.0)
+|   Z = o
+|   |   R = x
+|   |   |   X = x: positive (20.0/3.0)
+|   |   |   X = o
+|   |   |   |   Y = x: positive (3.0/1.0)
+|   |   |   |   Y = o: negative (7.0)
+|   |   |   |   Y = b: positive (3.0)
+|   |   |   X = b
+|   |   |   |   T = x: positive (6.0)
+|   |   |   |   T = o: negative (3.0)
+|   |   |   |   T = b: positive (0.0)
+|   |   R = o: negative (4.0)
+|   |   R = b: negative (8.0)
+|   Z = b
+|   |   R = x: positive (20.0)
+|   |   R = o: negative (8.0)
+|   |   R = b: positive (0.0)
+
+Number of Leaves  : 	95
+
+Size of the tree : 	142
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         815               85.0731 %
+Incorrectly Classified Instances       143               14.9269 %
+Kappa statistic                          0.6669
+Mean absolute error                      0.1696
+Root mean squared error                  0.3459
+Relative absolute error                 37.4444 %
+Root relative squared error             72.6852 %
+Total Number of Instances              958
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.898    0.238    0.877      0.898    0.887      0.667    0.897     0.923     positive
+                 0.762    0.102    0.798      0.762    0.780      0.667    0.897     0.835     negative
+Weighted Avg.    0.851    0.191    0.849      0.851    0.850      0.667    0.897     0.893
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 562  64 |   a = positive
+  79 253 |   b = negative

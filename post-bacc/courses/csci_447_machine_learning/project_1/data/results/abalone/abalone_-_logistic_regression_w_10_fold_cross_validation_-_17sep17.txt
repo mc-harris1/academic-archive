@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     abalone.txt
+Instances:    4177
+Attributes:   9
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable               M            F
+=====================================
+Z               -18.6974     -17.6818
+Y                  8.086      13.0489
+X                 4.9307       8.1075
+W                 6.2682       6.3996
+V                 -2.198      -5.2464
+U                11.0514      13.2179
+T                -5.1205      -5.5952
+S                 0.2026       0.1967
+Intercept        -0.3198       -2.841
+
+
+Odds Ratios...
+                   Class
+Variable               M            F
+=====================================
+Z                      0            0
+Y              3248.5373  464595.5693
+X               138.4777    3319.3063
+W                527.519     601.5969
+V                  0.111       0.0053
+U             63035.0364  550131.9734
+T                  0.006       0.0037
+S                 1.2246       1.2174
+
+
+Time taken to build model: 0.22 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2320               55.5423 %
+Incorrectly Classified Instances      1857               44.4577 %
+Kappa statistic                          0.3301
+Mean absolute error                      0.3488
+Root mean squared error                  0.4168
+Relative absolute error                 78.6639 %
+Root relative squared error             88.5254 %
+Total Number of Instances             4177
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.504    0.308    0.485      0.504    0.494      0.194    0.677     0.505     M
+                 0.337    0.166    0.481      0.337    0.396      0.192    0.721     0.488     F
+                 0.827    0.199    0.663      0.827    0.736      0.598    0.887     0.786     I
+Weighted Avg.    0.555    0.229    0.541      0.555    0.541      0.323    0.759     0.590
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  770  407  351 |    a = M
+  653  440  214 |    b = F
+  164   68 1110 |    c = I

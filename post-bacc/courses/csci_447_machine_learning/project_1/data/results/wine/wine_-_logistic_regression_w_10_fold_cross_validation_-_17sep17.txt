@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     wine.txt
+Instances:    178
+Attributes:   14
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              Q
+              P
+              O
+              N
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                         1                      2
+=========================================================
+Z                          15.3095               -10.8628
+Y                           0.1339                -3.0747
+X                          19.9437                -47.312
+W                           -4.095                 1.6163
+V                            0.188                -0.0248
+U                          11.2266                 0.7498
+T                           9.7225                10.4024
+S                         -43.6145                27.1677
+R                           1.7912                 2.5934
+Q                           0.0984                -8.5579
+P                            21.63                58.0779
+O                          13.3915                 6.5932
+N                           0.0515                -0.0458
+Intercept                -314.3735               204.0195
+
+
+Odds Ratios...
+                             Class
+Variable                         1                      2
+=========================================================
+Z                     4454638.1343                      0
+Y                           1.1432                 0.0462
+X                   458622047.7391                      0
+W                           0.0167                 5.0346
+V                           1.2069                 0.9755
+U                       75100.5965                 2.1166
+T                       16689.2957             32939.3683
+S                                0   6.291910374712692E11
+R                           5.9968                 13.375
+Q                           1.1034                 0.0002
+P                   2476282592.718  1.6708051125881662E25
+O                      654388.2561               730.1225
+N                           1.0528                 0.9552
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         173               97.191  %
+Incorrectly Classified Instances         5                2.809  %
+Kappa statistic                          0.9574
+Mean absolute error                      0.0189
+Root mean squared error                  0.1306
+Relative absolute error                  4.3027 %
+Root relative squared error             27.8657 %
+Total Number of Instances              178
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.983    0.008    0.983      0.983    0.983      0.975    1.000     1.000     1
+                 0.958    0.019    0.971      0.958    0.965      0.941    0.998     0.998     2
+                 0.979    0.015    0.959      0.979    0.969      0.958    1.000     0.999     3
+Weighted Avg.    0.972    0.014    0.972      0.972    0.972      0.957    0.999     0.999
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 58  1  0 |  a = 1
+  1 68  2 |  b = 2
+  0  1 47 |  c = 3
