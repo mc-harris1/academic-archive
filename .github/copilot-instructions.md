@@ -7,7 +7,7 @@
 
 ## Toolchain
 - Python uses `pyproject.toml` as the source of truth, `uv` for dependency and environment management, `ruff` for linting and formatting, and `pre-commit` for repository hooks.
-- R uses `DESCRIPTION` for project metadata, `renv.lock` for dependency state, `renv` for environment management, `lintr` for linting, `styler` for formatting, and `precommit` for R hook helpers.
+- R uses `renv.lock` for dependency state, `renv` for environment management, `lintr` for linting, `styler` for formatting, and `precommit` for R hook helpers.
 - Keep one root `.pre-commit-config.yaml` that coordinates both ecosystems.
 - See `docs/TOOLING.md` for the bootstrap plan, file locations, and command expectations.
 
